@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Graph from './Graph'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+const App = () => (
+  <div className="App">
+    <header className="header">Bar Graph</header>
+    <Graph />
+    <footer className="footer">
+      Made by{' '}
+      <code>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="link"
+          href="https://github.com/giridhar7632"
+          target={'_blank'}
+          rel="noreferrer"
         >
-          Learn React
+          Giridhar
         </a>
-      </header>
-    </div>
-  );
-}
+      </code>
+      {' 😃'}
+    </footer>
+  </div>
+)
 
-export default App;
+export default App
